@@ -20,6 +20,7 @@
 * [`git`](https://github.com/git/git)
 * [`nodejs`](https://nodejs.org) (20.x or later)
 * [`yarn`](https://yarnpkg.com/)
+* A fully functional Pterodactyl installation.
 * Linux and Pterodactyl knowledge.
 * Common sense.
 
