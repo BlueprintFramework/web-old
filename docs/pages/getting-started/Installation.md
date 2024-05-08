@@ -46,6 +46,15 @@ yarn add cross-env</code></pre>
       <p>We make use of some additional dependencies that might not come preinstalled with your distribution. For this example, we'll use <code>apt</code>. Commands may differ for distributions that are not Debian-based.</p>
       <pre><code class="language-bash">apt install -y zip unzip git curl wget</code></pre>
     </div>
+    <!-- Redprint -->
+        <div class="col col-12">
+      <b class="text-danger-emphasis">
+        <i class="bi bi-boxes pb-1" style="font-size:22px;"></i>
+        Additional dependencies
+      </b>
+      <p>We make use of some additional dependencies that might not come preinstalled with your distribution. For this example, we'll use <code>apt</code>. Commands may differ for distributions that are not Debian-based.</p>
+      <pre><code class="language-bash">apt install -y zip unzip git curl wget</code></pre>
+    </div>
   </div>
 </div><br><br>
 
