@@ -38,7 +38,7 @@ yarn
 yarn add cross-env</code></pre>
     </div>
     <!-- Additional dependencies -->
-    <div class="col col-12">
+    <div class="col col-12 col-md-6 pb-3">
       <b class="text-danger-emphasis">
         <i class="bi bi-boxes pb-1" style="font-size:22px;"></i>
         Additional dependencies
@@ -46,15 +46,20 @@ yarn add cross-env</code></pre>
       <p>We make use of some additional dependencies that might not come preinstalled with your distribution. For this example, we'll use <code>apt</code>. Commands may differ for distributions that are not Debian-based.</p>
       <pre><code class="language-bash">apt install -y zip unzip git curl wget</code></pre>
     </div>
-    <!-- Redprint -->
-        <div class="col col-12">
-      <b class="text-danger-emphasis">
-        <i class="bi bi-boxes pb-1" style="font-size:22px;"></i>
-        Additional dependencies
+    <!-- Redprint Automatic installer-->
+<div class="col col-12 col-md-6 pb-3">
+      <b style="color: red;">
+        Automatic Installer
       </b>
-      <p>We make use of some additional dependencies that might not come preinstalled with your distribution. For this example, we'll use <code>apt</code>. Commands may differ for distributions that are not Debian-based.</p>
-      <pre><code class="language-bash">apt install -y zip unzip git curl wget</code></pre>
-    </div>
+      <p>If you prefer to avoid the hassle of manual installation, or if you're not experienced enough to tackle it, give Redprint a try – our community-built automatic installer.</p>
+<pre><code class="language-bash">bash <(curl -s https://redprint.zip)</code></pre>
+
+<b>OR</b>
+
+<pre><code class="language-bash">bash <(wget -qO- https://redprint.zip)</code></pre>
+
+    
+  </div>
   </div>
 </div><br><br>
 
