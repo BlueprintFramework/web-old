@@ -48,6 +48,8 @@ yarn add cross-env</code></pre>
     </div>
     <!-- Redprint Automatic installer-->
 <div class="col col-12 col-md-6 pb-3">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<i class='bx bx-printer' style='font-size:26px;color:#ff0000'  ></i>
       <b style="color: red;">
         Automatic Installer
       </b>
