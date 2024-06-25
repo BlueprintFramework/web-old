@@ -29,6 +29,7 @@
 - Extension information values could not contain the `&` character. Doing so would break some pages. (Reported by [@0x7d8](https://github.com/0x7d8))
 - Extension-provided scripts were sometimes ran with root permissions, which was not intentional.
 - Fixed a typo in Blueprtint's installation log. ([#38](https://github.com/BlueprintFramework/framework/pull/38))
+- Fixed blueprint.sh not working due to poor merging (naughty ivy) ([46(https://github.com/BlueprintFramework/framework/pull/46))
 - `SettingsContainer.tsx` was extended by the backups component, which was not intentional. (Reported by [@itsvic-dev](https://github.com/itsvic-dev/))
 - Ending extension identifiers with `.blueprint` in `-install` no longer results in a error. ([#41](https://github.com/BlueprintFramework/framework/pull/41))
 
