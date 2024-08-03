@@ -82,7 +82,7 @@ This step allows Blueprint to function and know where itself and Pterodactyl are
 Modify the `$WEBUSER`, `$USERSHELL` and `$PERMISSIONS` values to your needs. If you don't have a unusual webserver path or user/group, you can skip this step or run the command shown below without any modifications.
 
 ```bash
-WEBUSER="www-data"; USERSHELL="/bin/bash"; PERMISSIONS="www-data:www-data";
+WEBUSER="www-data"; USERSHELL="/bin/bash"; PERMISSIONS="www-data:www-data"; FOLDER="/var/www/pterodactyl";
 sed -i -E -e "s|WEBUSER=\"www-data\" #;|WEBUSER=\"$WEBUSER\" #;|g" -e "s|USERSHELL=\"/bin/bash\" #;|USERSHELL=\"$USERSHELL\" #;|g" -e "s|OWNERSHIP=\"www-data:www-data\" #;|OWNERSHIP=\"$PERMISSIONS\" #;|g" $FOLDER/blueprint.sh
 ```
 
