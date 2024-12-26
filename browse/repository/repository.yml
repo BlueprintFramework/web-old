@@ -808,6 +808,18 @@
       icon: BBB.png
       url: https://builtbybit.com/resources/ssh-key-importer.45936/
 
+# Advanced Subdomain Manager
+- name: Advanced Subdomain Manager
+  author: Demon
+  description: Subdomain Manager for Pterodactyl made using Blueprint!
+  thumbnail: asubdomains.png
+  identifier: subdomains
+  category: extensions
+  downloads:
+  - name: BuiltByBit
+    icon: BBB.png
+    url: https://builtbybit.com/resources/advanced-subdomain-manager.56912/
+
 # Subdomains
 - name: Subdomain manager
   author: Corwin
