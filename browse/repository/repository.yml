@@ -813,7 +813,7 @@
   author: Demon
   description: Subdomain Manager for Pterodactyl made using Blueprint!
   thumbnail: asubdomains.png
-  identifier: subdomains
+  identifier: advancedsubdomains
   category: extensions
   downloads:
   - name: BuiltByBit
