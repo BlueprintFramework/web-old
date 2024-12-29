@@ -13,6 +13,19 @@
       icon: BBB.png
       url: https://builtbybit.com/resources/admin98.51358
 
+
+# Advanced Subdomain Manager
+- name: Advanced Subdomain Manager
+  author: Demon
+  description: Subdomain Manager for Pterodactyl made using Blueprint!
+  thumbnail: advancedsubdomainsmanager.png
+  identifier: advancedsubdomainsmanager
+  category: extensions
+  downloads:
+  - name: BuiltByBit
+    icon: BBB.png
+    url: https://builtbybit.com/resources/advanced-subdomain-manager.56912/
+
 # Announcements
 - name: Announcements
   author: prplwtf
@@ -54,18 +67,6 @@
     - name: BuiltByBit
       icon: BBB.png
       url: https://builtbybit.com/resources/auto-allocation-manager.54674/
-
-# Advanced Subdomain Manager
-- name: Advanced Subdomain Manager
-  author: Demon
-  description: Subdomain Manager for Pterodactyl made using Blueprint!
-  thumbnail: advancedsubdomainsmanager.png
-  identifier: advancedsubdomainsmanager
-  category: extensions
-  downloads:
-  - name: BuiltByBit
-    icon: BBB.png
-    url: https://builtbybit.com/resources/advanced-subdomain-manager.56912/
 
 # Blue Announcements
 - name: Blue Announcements
