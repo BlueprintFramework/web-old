@@ -13,36 +13,47 @@
 </div><br>
 
 # Dashboard wrappers
-<h4 class="fw-light">Extend the Pterodactyl client and admin dashboard within the Laravel blade wrapper.</h4><br/>
+<h4 class="fw-light">Extend Pterodactyl's interface by injecting your own code.</h4><br/>
 
-## Overview
-Blueprint provides wrappers for both admin and client dashboards, allowing you to seamlessly integrate your extension's UI into Pterodactyl's interface.
+Blueprint provides wrappers for both admin and client dashboards, allowing you to seamlessly integrate your extension's code into every page. This is useful for adding scripts, modifying the UI, or extending functionality across the entire panel.
 
-## Configuration
-To use dashboard wrappers, specify their locations in your `conf.yml`:
+## Setting Up
+Configure your wrappers in `conf.yml`:
 
 ```yaml
 # conf.yml
 
-# Admin panel wrapper
 admin:
   views: views.blade.php
-  wrapper: admin/wrapper.blade.php  # Path relative to your extension's views directory
-
-# Client dashboard wrapper
-dashboard:
-  wrapper: dashboard/wrapper.blade.php  # Path relative to your extension's views directory
+  wrapper: wrapper.blade.php 
 ```
 
-## Example Wrapper
-Here's a basic example of a wrapper file that loads a JavaScript file for all admin pages:
+## Basic Usage
+Create a wrapper file at the path specified in your `conf.yml`:
 
-```blade
-{{-- admin/wrapper.blade.php --}}
-<script src="/js/example.js"></script>
+```php
+<!-- wrapper.blade.php -->
+@php
+    $user = Auth::user();
+@endphp
+
+@if($user && $user->root_admin)
+    <script src="/js/example.js"></script>
+@endif
 ```
 
-This wrapper will load the specified JavaScript file on every page in your admin views.
+## Going Further
+You can do much more with wrappers:
+- Load different assets based on user roles
+- Include dynamic configuration
+- Add conditional content
+- Integrate with Laravel's features
+
+## Common Pitfalls
+- **Loading Order**: Your wrapper loads after Pterodactyl's main content
+- **Performance**: Keep wrappers lightweight - they run on every page load
+
+Need help? Join our Discord community!
 
 ## Navigation
 <div class="btn-group docs-navigator" role="group" aria-label="Navigation" style="float: right">
