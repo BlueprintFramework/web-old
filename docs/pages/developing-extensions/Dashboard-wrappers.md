@@ -1,3 +1,17 @@
+<div class="position-relative p-4 text-body bg-body border rounded-4 d-flex align-items-center">
+  <div class="me-3">
+    <i class="bi bi-book h2"></i>
+  </div>
+  <p class="me-3 my-0">
+    Written by those who've walked the path. Want to improve our guides? Contribute and help build something awesome!
+  </p>
+  <a href="https://github.com/BlueprintFramework/web/tree/main/docs/pages/developing-extensions">
+    <button class="btn btn-primary px-4 rounded-pill placeholder-wave" type="button">
+      Contribute
+    </button>
+  </a>
+</div><br>
+
 # Dashboard wrappers
 <h4 class="fw-light">Extend the Pterodactyl client and admin dashboard within the Laravel blade wrapper.</h4><br/>
 
