@@ -1,21 +1,36 @@
 # Dashboard wrappers
 <h4 class="fw-light">Extend the Pterodactyl client and admin dashboard within the Laravel blade wrapper.</h4><br/>
 
-<div class="position-relative p-5 text-center text-muted bg-body border rounded-4">
-  <div class="mt-5 mb-4">
-    <i class="bi bi-book h1"></i>
-  </div>
-  <h1 class="text-body-emphasis">Guide unavailable</h1>
-  <p class="col-lg-6 mx-auto mb-4">
-    Written by those who've walked the path. Want to improve our guides? Contribute and help build something awesome!
-  </p>
-  <a href="https://github.com/BlueprintFramework/web/edit/main/docs/pages/developing-extensions/Dashboard-wrappers.md">
-    <button class="btn btn-primary px-4 mb-5 rounded-pill" type="button">
-      Contribute
-    </button>
-  </a>
-</div><br>
+## Overview
+Blueprint provides wrappers for both admin and client dashboards, allowing you to seamlessly integrate your extension's UI into Pterodactyl's interface.
 
+## Configuration
+To use dashboard wrappers, specify their locations in your `conf.yml`:
+
+```yaml
+# conf.yml
+
+# Admin panel wrapper
+admin:
+  views: views.blade.php
+  wrapper: admin/wrapper.blade.php  # Path relative to your extension's views directory
+
+# Client dashboard wrapper
+dashboard:
+  wrapper: dashboard/wrapper.blade.php  # Path relative to your extension's views directory
+```
+
+## Example Wrapper
+Here's a basic example of a wrapper file that loads a JavaScript file for all admin pages:
+
+```blade
+{{-- admin/wrapper.blade.php --}}
+<script src="/js/example.js"></script>
+```
+
+This wrapper will load the specified JavaScript file on every page in your admin views.
+
+## Navigation
 <div class="btn-group docs-navigator" role="group" aria-label="Navigation" style="float: right">
   <a href="?page=developing-extensions/Admin-configuration" class="btn btn-dark bg-light-subtle border-light-subtle">Previous</a>
   <a href="?page=developing-extensions/React-components" class="btn btn-dark bg-light-subtle border-light-subtle">Next</a>
