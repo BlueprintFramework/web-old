@@ -17,7 +17,7 @@
 
 Blueprint provides wrappers for both admin and client dashboards, allowing you to seamlessly integrate your extension's code into every page. This is useful for adding scripts, modifying the UI, or extending functionality across the entire panel.
 
-## Setting Up
+## Configuration
 Configure your wrappers in `conf.yml`:
 
 ```yaml
@@ -28,8 +28,8 @@ admin:
   wrapper: wrapper.blade.php 
 ```
 
-## Basic Usage
-Create a wrapper file at the path specified in your `conf.yml`:
+## Basic usage
+Create a wrapper file at the path specified in your `conf.yml`, here's an example that loads a JavaScript file only for root administrators:
 
 ```php
 <!-- wrapper.blade.php -->
