@@ -918,3 +918,15 @@
     - name: BuiltByBit
       icon: BBB.png
       url: https://builtbybit.com/resources/minecraft-world-manager-for-blueprint.40088
+
+# Theme
+- name: ZephAdmin
+  author: Zephrynis
+  description: A clean and modern pterodactyl admin theme for Blueprint.
+  thumbnail: zephadmin.png
+  identifier: theme
+  category: themes
+  downloads:
+  - name: sourceXchange
+    icon: SXC.png
+    url: https://www.sourcexchange.net/products/zephadmin
