@@ -153,8 +153,56 @@
     <!-- Content -->
     <div class="opacity-0">.</div>
     <div class="container mt-1">
+      <div class="d-md-none mb-3">
+        <button class="btn btn-outline-primary w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#docsSidebarOffcanvas" aria-controls="docsSidebarOffcanvas">
+          ☰ Documentation Menu
+        </button>
+      </div>
+
+      <!-- Mobile Sidebar -->
+      <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="docsSidebarOffcanvas" aria-labelledby="docsSidebarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="docsSidebarLabel">Documentation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="docs-category pb-4">
+            <div class="ms-2"><span class="fw-bolder">Getting started</span><br></div>
+            <a href="?page=getting-started/Installation"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">Installation</button></a><br>
+            <a href="?page=getting-started/Extension-development"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">Extension development</button></a><br>
+            <a href="?page=getting-started/Frequently-asked-questions"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">Frequently Asked Questions</button></a><br>
+          </div>
+          <div class="docs-category pb-4">
+            <div class="ms-2"><span class="fw-bolder">Developing extensions</span><br></div>
+            <a href="?page=developing-extensions/Admin-views"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">Admin views</button><br></a>
+            <a href="?page=developing-extensions/Custom-controllers"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">Custom controllers</button><br></a>
+            <a href="?page=developing-extensions/Admin-configuration"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">Admin configuration</button><br></a>
+            <a href="?page=developing-extensions/Dashboard-wrappers"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">Dashboard wrappers</button><br></a>
+            <a href="?page=developing-extensions/React-components"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">React components</button><br></a>
+            <a href="?page=developing-extensions/Packaging-extensions"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">Packaging extensions</button><br></a>
+          </div>
+          <div class="docs-category pb-4">
+            <div class="ms-2"><span class="fw-bolder">Documentation</span><br></div>
+            <a href="?page=documentation/$blueprint"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">$blueprint</button><br></a>
+            <a href="?page=documentation/confyml"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">conf.yml</button><br></a>
+            <a href="?page=documentation/componentsyml"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">Components.yml</button><br></a>
+            <a href="?page=documentation/consoleyml"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">Console.yml</button><br></a>
+            <a href="?page=documentation/placeholders"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">Placeholders</button><br></a>
+            <a href="?page=documentation/flags"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">Flags</button><br></a>
+            <a href="?page=documentation/scripts"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">Scripts</button><br></a>
+          </div>
+          <div class="docs-category pb-4">
+            <div class="ms-2"><span class="fw-bolder">About</span><br></div>
+            <a href="?page=about/License"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">License</button><br></a>
+            <a href="?page=about/Changelog"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">Changelog</button><br></a>
+            <a href="?page=about/Branding"><button type="button" class="btn btn-sm text-start docs-nav" style="--bs-btn-padding-y: .1rem;">Branding</button><br></a>
+          </div>
+        </div>
+      </div>
+
       <div class="row">
-        <div class="col-lg-2 col-md-4 col-sm-12">
+        <!-- Desktop / Tablet Sidebar -->
+        <div class="col-lg-2 col-md-4 col-sm-12 d-none d-md-block">
           <!--
           <div class="docs-context pb-3">
             <a>
@@ -242,6 +290,7 @@
         </div>
       </div>
     </div>
+
     
 
 
