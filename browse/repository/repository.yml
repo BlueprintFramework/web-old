@@ -30,7 +30,7 @@
 
 # Automation
 - name: Automation
-  author: ExperimentalX
+  author: cammyzed
   description: Execute power/command actions on multiple servers at once.
   thumbnail: sysautomation.jpg
   identifier: sysautomation
