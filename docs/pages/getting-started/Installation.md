@@ -12,8 +12,9 @@ Want to run Blueprint through Docker instead? Take a peek at the official <a hre
   <div class="bg-body rounded-3 p-3 mb-3">
     <h5><i class="bi bi-folder2-open"></i> What's your Pterodactyl path?</h5>
     <p class="mb-2 text-secondary"><small>We'll update the commands below to work for your specific installation</small></p>
+    <p class="mb-2 text-secondary"><small>But if you didn't change the default Pterodactyl installation path, you don't need to change it here</small></p>
     <div class="input-group mb-3">
-      <input type="text" id="dirPath" class="form-control" placeholder="/path/to/pterodactyl" aria-label="Pterodactyl path" oninput="changethepath()">
+      <input type="text" id="dirPath" class="form-control" placeholder="/var/www/pterodactyl" aria-label="Pterodactyl default path" oninput="changethepath()">
     </div>
   </div>
 
@@ -41,7 +42,7 @@ apt-get install -y nodejs</code></pre>
       <p>Pterodactyl uses Yarn for managing it's node modules, which we'll need to install as well.</p>
       <pre><code class="language-bash">npm i -g yarn</code></pre>
       <p>Navigate to your Pterodactyl (usually <code>/var/www/pterodactyl</code>) and run the following command to initialize dependencies:</p>
-      <pre><code class="ptero-cmd language-bash">cd /path/to/pterodactyl
+      <pre><code class="ptero-cmd language-bash">cd /var/www/pterodactyl #Default pterodactyl path
 yarn</code></pre>
     </div>
     <!-- Additional dependencies -->
@@ -74,8 +75,8 @@ wget "$(curl -s https://api.github.com/repos/BlueprintFramework/framework/releas
 Unarchive the release you downloaded in the previous step in your Pterodactyl folder.
 
 ```bash
-mv release.zip /path/to/pterodactyl/release.zip
-cd /path/to/pterodactyl
+mv release.zip /var/www/pterodactyl/release.zip
+cd /var/www/pterodactyl  #Default pterodactyl path
 unzip release.zip
 ```
 
@@ -87,7 +88,7 @@ unzip release.zip
 This step allows Blueprint to function and know where itself and Pterodactyl are located and which permissions to use. Create a file called `.blueprintrc` inside of your Pterodactyl directory to begin.
 
 ```bash
-touch /path/to/pterodactyl/.blueprintrc
+touch /var/www/pterodactyl/.blueprintrc
 ```
 
 Modify the `$WEBUSER`, `$USERSHELL` and `$PERMISSIONS` values to match your environment. Provided below is the standard configuration for Debian-based systems, but you might need to make your own modifications.
@@ -96,7 +97,7 @@ Modify the `$WEBUSER`, `$USERSHELL` and `$PERMISSIONS` values to match your envi
 echo \
 'WEBUSER="www-data";
 OWNERSHIP="www-data:www-data";
-USERSHELL="/bin/bash";' >> /path/to/pterodactyl/.blueprintrc
+USERSHELL="/bin/bash";' >> /var/www/pterodactyl/.blueprintrc
 ```
 
 <br>

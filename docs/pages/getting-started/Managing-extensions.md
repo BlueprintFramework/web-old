@@ -20,6 +20,29 @@
   <div class="ps-3 ms-3">Blueprint extensions must be installed, updated, built and removed via the command line. Shell access is required to perform these actions.</div>
 </div><br/>
 
+### **Upload Extensions**
+
+<div class="alert mt-2 rounded-4 border" role="alert">
+  <i class="bi bi-exclamation-diamond mb-1 text-info float-start fs-4"></i>
+  <div class="ps-3 ms-3">Before wanting to install any blueprint extensions, you first need to upload the files to your server where Blueprint is installed on by using an SFTP client program.</div>
+</div><br/>
+
+Before wanting to install any blueprint extensions you need to upload them to your server where your pterodactyl panel with blueprint is running on.<br>
+
+For that you can use a software called <strong><a href="https://winscp.net/eng/index.php">WinSCP</a></strong>.
+<br>
+<br>
+If it is your first time using these kind of tools (SFTP clients), fear not! I will guide you through the connection process to your server. <strong><i>These steps are not including the WinSCP installation process, only the connection process</i></strong><br>
+<br>
+On the main window named "Login" with an lock icon, you will select "New Site" with File protocol set to SFTP and port number to 22, (It should be the default values, if they aren't you can just put them manually its okay), the "Host name:" text zone is your server public IP, for your username you will enter "root".<br>
+<br>
+Now that you are halfway through it you just need to either enter your root user password or if you have an SSH key you can click on "Advanced...", in the SSH section select "Authentication", and choose your SSH private key in the "Authentication parameters" (An SSH key is a file ending most of the time by .ppk) once you have finished selecting your SSH key you can back out by clicking on "Ok" and "Login" (third button starting from far down right)
+<br>
+an SSH key is a lot more secure than a simple password and is preferred but will still work<br>
+<br>
+You can click on this link to <a href="https://winscp.net/download/files/20250511150014dcc4e6cb3ecdb410d0a1017fffe9ad/WinSCP-6.5.1-Setup.exe">download WinSCP 6.5.1 Setup</a> directly. (Directly meaning that it will immediately download the installer)
+<br>
+
 ### **Install Exstensions**
 
 <div class="alert mt-2 rounded-4 border" role="alert">
