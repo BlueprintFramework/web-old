@@ -82,11 +82,11 @@ function changethepath() { // this is used to change path in code blocks
     
     let content = block.dataset.original;
     
-    if (content.includes('/path/to/pterodactyl')) {
+    if (content.includes('/var/www/pterodactyl')) {
       if (block.innerHTML) {
-        block.innerHTML = content.replaceAll('/path/to/pterodactyl', dirPath);
+        block.innerHTML = content.replaceAll('/var/www/pterodactyl', dirPath);
       } else {
-        block.textContent = content.replaceAll('/path/to/pterodactyl', dirPath);
+        block.textContent = content.replaceAll('/var/www/pterodactyl', dirPath);
       }
     }
   });
