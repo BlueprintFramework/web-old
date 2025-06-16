@@ -20,7 +20,7 @@
   <div class="ps-3 ms-3">Blueprint extensions must be installed, updated, built and removed via the command line. Shell access is required to perform these actions.</div>
 </div><br/>
 
-### **Install Exstensions**
+### **Install Extensions**
 
 <div class="alert mt-2 rounded-4 border" role="alert">
   <i class="bi bi-exclamation-diamond mb-1 text-danger float-start fs-4"></i>
@@ -37,7 +37,7 @@ Replace `(extension)` with the name of the extension or the exact filename of th
 
 <br>
 
-### **Remove Exstensions**
+### **Remove Extensions**
 
 To uninstall a Blueprint extension, run the following command:
 ```sh
