@@ -45,3 +45,5 @@
     </a>
   </div>
 </div>
+
+We're working on a full rewrite of our site, which includes new documentation and guides. The documentation available on this site is oriented towards beta-2024-12, but everything likely still applies to beta-2025-09. We're expecting the new site to be finished before the end of October, sorry for the wait :)
