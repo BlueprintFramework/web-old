@@ -290,9 +290,9 @@
         const platformsWithRatings = Object.values(data.platforms).filter((x) => x.rating)
         const averageRating = platformsWithRatings.length > 0
           ? platformsWithRatings.reduce((sum, platform) => sum + platform.rating, 0) / platformsWithRatings.length
-          : 0 
+          : 0
 
-        const twoWeeksAgo = new Date(); 
+        const twoWeeksAgo = new Date();
         twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
         const isNew = createdDate > twoWeeksAgo;
 
@@ -301,7 +301,7 @@
         productContainer.innerHTML = `
           <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 position-relative pt-5 mb-4 border-0">
             <div class="blur-gradient-overlay z-2"></div>
-            <img src="${data.banner}" class="product-image object-fit-cover z-1 top-0 start-0 w-100 h-100">
+            <img src="${data.banner.fullres}" class="product-image object-fit-cover z-1 top-0 start-0 w-100 h-100">
             <div class="d-flex flex-column h-100 p-5 pt-5 text-white text-shadow-1 position-relative extension-card-content z-3">
               <h3 class="pt-5 mt-5 mb-3 fw-bolder">
                 ${data.name}
@@ -349,7 +349,7 @@
                           <label class="input-group-text w-100 border-0 platform-button-content">
                             <img src="/browse/assets/source/${
                               platforms[platform][1]
-                            }" alt="" width="24" height="24" class="me-2">  
+                            }" alt="" width="24" height="24" class="me-2">
                             ${platforms[platform][0]}
                           </label>
                           <label class="input-group-text border-0 text-secondary platform-button-content">${_data.price} ${_data.currency}</label>
@@ -403,7 +403,7 @@
                   }
                   <span class="badge bg-light-subtle text-light-emphasis rounded-pill">
                     ${
-                      (data.type == "THEME") ? (`
+                      (data.type == "theme") ? (`
                         <i class="bi bi-palette2"></i>
                         theme
                       `) : (`

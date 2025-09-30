@@ -21,7 +21,7 @@ function insertReviewData(html, data) {
 		'@context': 'https://schema.org/',
 		'@type': 'Product',
 		'name': data.name,
-		'image': data.banner,
+		'image': data.banner.fullres,
 		'description': data.summary,
 		'brand': {
 			'@type': 'Thing',
@@ -58,14 +58,14 @@ export const onRequest = async(context) => {
 		'description': '',
 		'og:description': '',
 		'og:title': 'blueprint.zip',
-		'og:image': '/.assets/brand/og-browse.jpg',
+		'og:image': '/.assets/brand/og.jpg',
 		'og:url': context.request.url,
 		'og:type': 'website',
 		'twitter:card': 'summary_large_image',
 		'twitter:url': context.request.url,
 		'twitter:title': 'blueprint.zip',
 		'twitter:description': '',
-		'twitter:image': '/.assets/brand/og-browse.jpg'
+		'twitter:image': '/.assets/brand/og.jpg'
 	}
 
 	if (url.pathname.endsWith('/')) {
@@ -94,10 +94,10 @@ export const onRequest = async(context) => {
 				'og:title': `${extensionData.name}`,
 				'description': `${extensionData.summary}`,
 				'og:description': `${extensionData.summary}`,
-				'og:image': extensionData.banner,
+				'og:image': extensionData.banner.fullres,
 				'twitter:title': `${extensionData.name}`,
 				'twitter:description': `${extensionData.summary}`,
-				'twitter:image': extensionData.banner
+				'twitter:image': extensionData.banner.fullres
 			}), extensionData), {
 				headers: {
 					'Content-Type': 'text/html'
