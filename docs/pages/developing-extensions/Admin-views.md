@@ -33,7 +33,7 @@ The Barebones template includes two files by default, `conf.yml` and `view.blade
   </div>
 </div>
 
-You might have already noticed that `{name}`, `{identifier}` and `{version}` are replaced with the corresponding values automatically. These strings are referred to as [placeholders](?page=documentation/Placeholders).
+You might have already noticed that `{name}`, `{identifier}` and `{version}` are replaced with the corresponding values automatically. These strings are referred to as [placeholders](?page=documentation/placeholders).
 
 Right now, all lines are on the same row. This is due to how HTML is rendered in Blueprint’s admin view, as it doesn’t handle line breaks. We can fix this by adding `<br>` tags at the end of each line.
 
