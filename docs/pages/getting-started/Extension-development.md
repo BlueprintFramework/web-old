@@ -22,6 +22,12 @@
 
 ### **Quick start**
 Get started by beginning from a template, naming and describing your extension through the initialize command.
+
+<div class="alert alert-danger mt-2 rounded-4" role="alert">
+  <i class="bi bi-exclamation-octagon-fill mt-1" style="font-size:23px; float: left;"></i>
+  <div class="ps-3 ms-3"><b>Extension identifiers should be lowercase a-z characters only.</b> Blueprint would normally stop you from installing/creating extensions that do not meet that standard, but there is a bug in <code>beta-2024-12</code> preventing it from doing so. <b>Extension identifiers not meeting this standard will not work in future versions</b> and can cause unexpected issues when installed.</div>
+</div>
+
 ```sh
 blueprint -init
 ```
