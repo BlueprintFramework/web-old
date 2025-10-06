@@ -25,7 +25,7 @@
     <a href="?page=about/changelog/beta-2025-09" class="link-underline-opacity-0 link-underline">
       <div class="card card-cover h-100 overflow-hidden rounded-4 bg-dark bg-hover-dark changelog-btn border-0 bg-body-tertiary">
         <div class="d-flex flex-column h-100 p-4 text-shadow-1">
-          <h3 class="fw-bolder">beta-2024-09 <span class="badge bg-success border border-success rounded-pill">Latest</span></h3>
+          <h3 class="fw-bolder">beta-2025-09 <span class="badge bg-success border border-success rounded-pill">Latest</span></h3>
         </div>
       </div>
     </a>
