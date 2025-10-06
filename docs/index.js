@@ -41,7 +41,7 @@ fetch(a)
 
   function addGitHubEditButton(page, contentDiv) {
     // Construct the correct GitHub URL for the markdown file
-    const githubRepoURL = 'https://github.com/BlueprintFramework/web/edit/main/docs/pages/';
+    const githubRepoURL = 'https://github.com/BlueprintFramework/web-old/edit/main/docs/pages/';
     const githubEditURL = `${githubRepoURL}${page}.md`;
 
     const editButton = document.createElement('a');
