@@ -77,7 +77,7 @@ Unarchive the release you downloaded in the previous step in your Pterodactyl fo
 ```bash
 mv release.zip /var/www/pterodactyl/release.zip
 cd /var/www/pterodactyl
-unzip release.zip
+unzip -o release.zip
 ```
 
 `unzip` might give you the choice to overwrite a file or not. When installing Blueprint, always overwrite existing Pterodactyl files, as they are needed for Blueprint to function.
