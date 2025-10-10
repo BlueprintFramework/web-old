@@ -134,7 +134,7 @@ class {identifier}SettingsFormRequest extends AdminFormRequest
         return [
             'theme' => 'Theme',
             'customName' => 'Custom Name',
-            'count' => 'Count,
+            'count' => 'Count',
         ];
     }
 }
